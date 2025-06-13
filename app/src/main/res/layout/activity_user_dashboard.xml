@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    tools:context=".UserDashboardActivity">
+
+    <TextView
+        android:id="@+id/dashboardTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/almendra_bold_italic"
+        android:gravity="center"
+        android:text="User Dashboard"
+        android:textAlignment="center"
+        android:textColor="#4B0404"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.097" />
+
+    <Button
+        android:id="@+id/profileButton"
+        android:layout_width="262dp"
+        android:layout_height="63dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginRight="32dp"
+        android:backgroundTint="#800D34"
+        android:drawableLeft="@drawable/ic_profile"
+        android:padding="16dp"
+        android:text="Manage Profile"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dashboardTitleTextView" />
+
+    <Button
+        android:id="@+id/productCatalogButton"
+        android:layout_width="264dp"
+        android:layout_height="61dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:backgroundTint="#7E1237"
+        android:padding="16dp"
+        android:text="Product Catalog"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.592" />
+</androidx.constraintlayout.widget.ConstraintLayout>
